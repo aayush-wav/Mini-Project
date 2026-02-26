@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>School Management System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <widget class="QWidget" name="tabStudents">
+       <attribute name="title">
+        <string>Students</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item><widget class="QPushButton" name="btnAddStudent"><property name="text"><string>Add Student</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnRemoveStudent"><property name="text"><string>Remove Student</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnSearchStudent"><property name="text"><string>Search Student</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnUndoAdmission"><property name="text"><string>Undo Admission</string></property></widget></item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableStudents">
+          <property name="columnCount"><number>4</number></property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabTeachers">
+       <attribute name="title">
+        <string>Teachers</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item><widget class="QPushButton" name="btnAddTeacher"><property name="text"><string>Add Teacher</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnRemoveTeacher"><property name="text"><string>Remove Teacher</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnSearchTeacher"><property name="text"><string>Search Teacher</string></property></widget></item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableTeachers">
+          <property name="columnCount"><number>3</number></property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabCourses">
+       <attribute name="title">
+        <string>Courses</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item><widget class="QPushButton" name="btnAddCourse"><property name="text"><string>Add Course</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnEnrollStudent"><property name="text"><string>Enroll Student</string></property></widget></item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableCourses">
+          <property name="columnCount"><number>3</number></property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabFees">
+       <attribute name="title">
+        <string>Fee Queue</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item><widget class="QPushButton" name="btnAddFeeRecord"><property name="text"><string>Add Fee Record</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnProcessFee"><property name="text"><string>Process Next</string></property></widget></item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableFees">
+          <property name="columnCount"><number>3</number></property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>
